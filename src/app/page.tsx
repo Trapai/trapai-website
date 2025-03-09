@@ -69,13 +69,11 @@ function CaseStudies({
   return (
     <>
       <SectionIntro
-        title="Harnessing technology for a brighter future"
+        title="We build whatever we like, when we like it"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          We believe technology is the answer to the world’s greatest
-          challenges. It’s also the cause, so we find ourselves in bit of a
-          catch 22 situation.
+          We are builders and makers, and we have many interests. So you'll find here a lot of different things
         </p>
       </SectionIntro>
       <Container className="mt-16">
@@ -192,7 +190,9 @@ export default async function Home() {
           </p>
         </FadeIn>
       </Container>
-      
+
+      <CaseStudies caseStudies={caseStudies} />
+
       <ContactSection />
     </>
   )
