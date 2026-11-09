@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
+import { ContactInquiryForm } from '@/components/ContactInquiryForm'
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Offices } from '@/components/Offices'
@@ -54,7 +55,7 @@ function RadioInput({
 function ContactForm() {
   return (
     <FadeIn className="lg:order-last">
-      <form>
+      <ContactInquiryForm>
         <h2 className="font-display text-base font-semibold text-neutral-950">
           Work inquiries
         </h2>
@@ -88,7 +89,7 @@ function ContactForm() {
         <Button type="submit" className="mt-10">
           Let’s work together
         </Button>
-      </form>
+      </ContactInquiryForm>
     </FadeIn>
   )
 }
